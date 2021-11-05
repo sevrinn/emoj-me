@@ -1,5 +1,9 @@
 const emojiContainer = document.querySelector("#emoji-container")
+const pushBtn = document.querySelector("#push-btn")
+const emojiInput = document.querySelector("#emoji-input")
 let emojiArr = ["😜", "😏", "😈"]
+
+
 
 const renderEmojis = () => {
   let emojis = ""
@@ -9,3 +13,7 @@ const renderEmojis = () => {
   emojiContainer.innerHTML = emojis
 }
 renderEmojis()
+
+pushBtn.addEventListener("click", () => {
+  console.log(emojiInput.value)
+})
