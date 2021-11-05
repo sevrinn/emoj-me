@@ -15,5 +15,9 @@ const renderEmojis = () => {
 renderEmojis()
 
 pushBtn.addEventListener("click", () => {
-  console.log(emojiInput.value)
+  if (emojiInput.value) {
+    emojiArr.push(emojiInput.value)
+    emojiInput.value = []
+    renderEmojis()
+  }
 })
