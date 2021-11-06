@@ -32,3 +32,13 @@ unshiftBtn.addEventListener("click", () => {
     renderEmojis()
   }
 })
+
+popBtn.addEventListener("click", () => {
+  emojiArr.pop()
+  renderEmojis()
+})
+
+shiftBtn.addEventListener("click", () => {
+  emojiArr.shift()
+  renderEmojis()
+})
